@@ -1,17 +1,56 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // Створити програму для виведення чисел від 1 до 10
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        for (int t = 0; t <= 10; t++) {
+            System.out.println(t);
         }
+
+
+        // Показати всі парні числа в діапазоні від 1 до 100
+
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+
+
+
+        // Знайти факторіал числа 7
+
+      int number = 7, factorial = 1;
+        for (int f = 1; f <= number; f++) {
+            factorial *= f;
+            System.out.println(factorial);
+
+        }
+
+        //Вивести числа фібоначчі до 100 (значення самого числа не повинно перевищувати 100)
+
+        int n1 = 0, n2 = 1, sum = 0;
+        System.out.println(n1 + "\n" + n2 + "" );
+        while (sum <=100) {
+            sum = n1 + n2;
+        if (sum > 100) {
+            break;
+        }
+        System.out.println(sum + "" );
+        n1 = n2;
+        n2 = sum;
+        }
+        }
+
+
     }
-}
+
+
+
+
+
+
+
+
